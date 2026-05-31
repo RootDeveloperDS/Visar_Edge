@@ -1,45 +1,77 @@
-# Converter script for release generation
-import os
-import sys
 import json
-from datetime import datetime
-from openai import OpenAI
-
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+import sys
+import os
+import re
 
 commit_msg = sys.argv[1]
 
-SYSTEM_PROMPT = """
-You are VISAR Release Compiler.
+# SIMPLE VERSION DETECTION
+version_match = re.search(r"v(\d+\.\d+\.\d+\.\d+)", commit_msg)
+version = version_match.group(1) if version_match else "0.0.0.0"
 
-Convert commit logs into STRICT VISAR JSON format.
+data = {
+    "id": f"visar-edge-v{version}",
+    "version": version,
+    "build": version,
+    "codename": "VISAR Release",
+    "title": commit_msg,
 
-Rules:
-- Output ONLY valid JSON
-- No markdown, no explanation
-- Follow schema exactly
-- Extract version, title, codename, summary
-- Group into: added, improved, fixed, removed
-- If missing data, use empty arrays
-"""
+    "release_type": "major",
+    "status": "stable",
 
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": commit_msg}
-    ]
-)
+    "period": {
+        "start": "",
+        "end": "",
+        "days": 0
+    },
 
-data = json.loads(response.choices[0].message.content)
+    "summary": commit_msg,
 
-version = data["version"]
+    "highlights": [],
+
+    "metrics": {
+        "features_added": 0,
+        "improvements": 0,
+        "fixes": 0,
+        "removed": 0,
+        "breaking_changes": 0,
+        "known_issues": 0
+    },
+
+    "sections": [
+        {
+            "key": "added",
+            "title": "Added",
+            "items": []
+        },
+        {
+            "key": "improved",
+            "title": "Improved",
+            "items": []
+        },
+        {
+            "key": "fixed",
+            "title": "Fixed",
+            "items": []
+        },
+        {
+            "key": "removed",
+            "title": "Removed",
+            "items": []
+        }
+    ],
+
+    "source": {
+        "input_type": "commit_log",
+        "generated_by": "github_action"
+    }
+}
 
 os.makedirs("releases", exist_ok=True)
 
 file_path = f"releases/v{version}.json"
 
-with open(file_path, "w", encoding="utf-8") as f:
+with open(file_path, "w") as f:
     json.dump(data, f, indent=2)
 
-print("Release generated:", file_path)
+print("Generated:", file_path)
