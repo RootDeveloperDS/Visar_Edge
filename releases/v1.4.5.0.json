@@ -1,0 +1,56 @@
+{
+    "version": "1.4.5.0",
+    "codename": "Internal Browser, Audio Amplification & Neural Feed Evolution",
+    "title": "Internal Browser, Audio Amplification & Neural Feed Evolution",
+    "release_type": "Minor",
+    "release_date": "2026-03-20",
+    "development_period": "2026-03-17 to 2026-03-20 (4 Days)",
+    "status": "stable",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This update introduces a native persistent browser for seamless internal redirects, enhances audio detection via digital frame amplification, and significantly overhauls the Neural Feed UI to support future complex multi-step AI interactions.",
+    "highlights": [
+        "Native Internal Browser",
+        "Digital Audio Amplification",
+        "Multi-Step UI Rendering",
+        "Neural Feed Visual Overhaul",
+        "Console Color Coding",
+        "Persona Selector Fix",
+        "Codebase Optimization"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Engineered a persistent, independent in-app web browser with multi-tab navigation, URL support, and dynamic secure icon rendering.",
+                "Added secure internal URL redirection handling to display links natively without breaking ecosystem immersion.",
+                "Introduced a dedicated background wallpaper and a structured header bar to the Neural Feed for a polished, tactical appearance."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Upgraded Wake Word and Ear Core sensitivity via digital amplification of raw audio frames to accurately process quieter commands.",
+                "Overhauled Neural Feed UI to dynamically format errors, chat history, tool execution messages, and complex multi-step responses.",
+                "Implemented console color coding: Cyan for LLM context text and Yellow for Gemini configurations and System Prompts."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Resolved a critical state-change error within the Visar_Chat_Core Persona Selector, ensuring seamless dynamic personality switching."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": [
+                "Purged dead code and stripped unwanted, redundant logic from Visar_Edge_Brain to improve execution speed and maintainability."
+            ]
+        }
+    ],
+    "notes": "This minor release establishes essential UI and sensory foundations for upcoming agentic tasks. By integrating a native browser and vastly improving audio frame sensitivity, VISAR Edge is now equipped to seamlessly navigate web contexts and capture nuanced environmental audio data without compromising processing speed."
+}

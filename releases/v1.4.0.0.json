@@ -1,4 +1,74 @@
 {
-  "version": "v1.4.0.0",
-  "notes": "Release v1.4.0.0."
+    "version": "1.4.0.0",
+    "codename": "Dynamic Status Engine, API Key Rotation, Smart Routing & RAG Optimization",
+    "title": "Dynamic Status Engine, API Key Rotation, Smart Routing & RAG Optimization",
+    "release_type": "Major",
+    "release_date": "2026-03-16",
+    "development_period": "2026-02-27 to 2026-03-16 (18 Days)",
+    "status": "stable",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This massive milestone transforms VISAR Edge's internal architecture, introducing a highly modular Status Bar engine for real-time telemetry, robust API key rotation, intelligent LLM routing, and significant vector database optimizations.",
+    "highlights": [
+        "Dynamic Status Engine",
+        "Round-Robin API Key Rotation",
+        "Intelligent Model Routing",
+        "Smart Batch Vector Processing",
+        "Background Database Threading",
+        "Global Error Handler",
+        "OTA GitHub Update Protocol"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Deployed a modular Status Bar framework (StatusEngine) to display runtime telemetry via Qt Signals and dynamic upsert logic.",
+                "Introduced Task Widget Architecture featuring BasicTask, animated SpinnerTask, and QTimer-based auto-expiring progress alerts.",
+                "Integrated live CPU and RAM tracking directly into the Status Engine pipeline.",
+                "Implemented an API Key Rotator (Singleton) for thread-safe, round-robin load balancing with on-the-fly .env reloading.",
+                "Built an Intelligent Model Router to dynamically select optimal models based on prompt data and available keys.",
+                "Created a dedicated 'AI & LLM Settings' UI sector and integrated new SFX audio cues for system events.",
+                "Added a global error handler to catch system-wide exceptions and auto-force the UI into an error state."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Upgraded ChromaDB ingestion with Smart Batch Processing, using cached hashes to completely eliminate redundant processing.",
+                "Shifted Vector Store loading and indexing entirely to background threads, drastically reducing application startup time.",
+                "Connected Vector DB processing directly to the Status Engine for real-time UI broadcasting of loading progress.",
+                "Upgraded Local LLM pipelines to fully support conversation history and dynamic persona loading via utils/personas.py.",
+                "Upgraded the OTA update protocol to check versions directly against raw JSON files hosted on GitHub.",
+                "Implemented lazy-loading for sidebar icons and replaced legacy emojis with clean, sci-fi compliant icon labels."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Resolved INVALID_ARGUMENT errors for Gemma models by dynamically injecting system instructions directly into user messages.",
+                "Fixed RAG content injection structures to guarantee zero redundancy within LLM context windows.",
+                "Patched minor listening and idle state function triggers."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": [
+                "Cleaned up and removed redundant JSON prompt contents from the API payload pipeline."
+            ]
+        }
+    ],
+    "compatibility": {
+        "os": "Windows 10 / Windows 11",
+        "python_version": "3.11+",
+        "requirements": [
+            "PySide6",
+            "uv (Package Manager)",
+            "Gemini 3.1 Pro Preview / Groq / Local Models"
+        ]
+    },
+    "notes": "Version 1.4.0.0 fundamentally optimizes VISAR's backend stability and speed. The introduction of background threading for the Vector DB, combined with round-robin API load balancing, ensures uninterrupted intelligence routing. The new Status Engine provides deep transparency into system operations without cluttering the primary Neural Feed."
 }
