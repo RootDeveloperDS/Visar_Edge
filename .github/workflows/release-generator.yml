@@ -1,1 +1,48 @@
 # GitHub Actions workflow for release generator
+name: VISAR Release Auto Generator
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install openai
+
+      - name: Get latest commit message
+        id: commit
+        run: echo "COMMIT_MSG=$(git log -1 --pretty=%B)" >> $GITHUB_ENV
+
+      - name: Run VISAR Release Compiler
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python tools/release-generator/converter.py "$COMMIT_MSG"
+
+      - name: Sync index.json
+        run: python tools/ci/sync_index.py
+
+      - name: Commit generated release
+        run: |
+          git config --global user.name "VISAR Bot"
+          git config --global user.email "bot@visar.ai"
+
+          git add releases/
+          git add releases/index.json
+          git add releases/latest.json
+
+          git commit -m "chore: auto-generate VISAR release"
+          git push
