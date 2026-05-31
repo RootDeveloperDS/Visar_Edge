@@ -1,0 +1,13 @@
+{
+  "project": "VISAR Edge",
+  "latest_version": "1.5.0.0",
+  "total_releases": 1,
+  "versions": [
+    {
+      "version": "1.5.0.0",
+      "file": "v1.5.0.0.json",
+      "title": "Agentic Intelligence Upgrade",
+      "date": "2026-04-17"
+    }
+  ]
+}
