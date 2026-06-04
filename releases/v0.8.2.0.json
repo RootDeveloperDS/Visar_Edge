@@ -1,0 +1,71 @@
+{
+    "version": "0.1.0.0 - 0.8.2.0",
+    "codename": "The Legacy Alpha Archive",
+    "title": "VISAR Foundational Architecture, UI Integration & Early Prototypes",
+    "release_type": "Legacy Aggregate",
+    "release_date": "2025-09-02",
+    "development_period": "Project Inception from 2025-06-16 (Scratch) to 2025-09-02 (Alpha 0.8.2.0) (78 days)",
+    "status": "alpha",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "A comprehensive archive of all early-stage alpha builds, capturing the initial project commit through version 0.8.2.0. This consolidated release covers the foundation of the VISAR UI, integration of early QThread background processing, Firebase telemetry, Arcade modules, and the first iterations of the dashboard ecosystem.",
+    "highlights": [
+        "VISAR Development started - 16 June 2025",
+        "3D Brain & Onboarding Core",
+        "Dockable Sidebar Architecture",
+        "Live Telemetry & Heartbeat Detection",
+        "Delta News Feed RSS Integrations",
+        "Arcade Gaming Subsystems",
+        "QThread Processing Foundation",
+        "Firebase Server Logging"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Added a 3D Brain to the center panel and implemented an onboarding intro panel with multiple themes and keyboard shortcuts.",
+                "Integrated video intro functionality, auto-configuration checks, and a New Version Indicator.",
+                "Introduced a dockable sidebar architecture and initialized the core coding tab infrastructure.",
+                "Implemented Arcade integrations including CyberPunk Flappy Drone, 2048, Endless Runner, and Spider-Man with tooltips.",
+                "Added live user telemetry, last seen tracking, runtime monitoring, and heartbeat-based force-close detection.",
+                "Integrated RSS-based news boxes (Times of India, Hindustan Times) featuring auto-refresh intervals and futuristic styling.",
+                "Added the ExecuteIt utility for cross-platform script and application execution.",
+                "Integrated the WDC V3 cleaner module and the Coding 5 viewer.",
+                "Added an inbuilt feedback system, server-side boot time logging, and live email updates.",
+                "Introduced dropdown API key selectors, a global fullscreen toggle, tab speed settings, and custom background colors for Quick Tools."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Refactored QThread initialization messages, significantly enhancing system stat updates and API key management UI.",
+                "Upgraded global UI elements: updated titlebar toggles, enhanced the live user status dialog, and finalized Dashboard Box 4 & 5.",
+                "Improved Firebase database handling by simplifying environment variables and enforcing consistent user ID parameter naming.",
+                "Expanded logging capabilities and centralized error handling within the main application flow.",
+                "Streamlined configuration settings, adding debug toggles for news rendering and manual refresh controls for Dashboard 1."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Resolved widget layout and rendering issues across the Social Tab boxes, Dashboard Box 1, and Dashboard Box 5.",
+                "Fixed corner rendering artifacts within the live status box.",
+                "Patched core configuration settings logic and Coding 5 Viewer internal dependencies.",
+                "Cleaned up unused variables in system stats collection to prevent memory leaks.",
+                "Fixed .gitignore rules to safely exclude .envv and VISARmain.py, and updated project README structures."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": [
+                "Completely purged legacy templates for the VISAR backend and frontend, including outdated app logic, admin dashboards, and showcase HTML.",
+                "Deleted deprecated .envv configuration files and stripped unused code from the main repository."
+            ]
+        }
+    ],
+    "notes": "Consolidating versions 0.1.0.0 through 0.8.2.0 establishes a clean historical record of VISAR Edge's prototyping phase. This archive documents the transition from a basic UI shell into a multi-threaded, telemetry-aware dashboard, laying the critical groundwork for the beta and v1.0 architectures."
+}

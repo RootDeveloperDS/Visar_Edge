@@ -3,8 +3,8 @@
     "codename": "The Configuration & Asset Optimization Update",
     "title": "Update Configuration Settings, Add New Assets, and Refactor Main Window Icon",
     "release_type": "Patch",
-    "release_date": "N/A",
-    "development_period": "N/A",
+    "release_date": "2025-10-24",
+    "development_period": "2025-09-14 to 2025-10-24 (40 Days)",
     "status": "alpha",
     "developer": "Devansh Sharma",
     "banner_image": "",
@@ -12,7 +12,8 @@
     "highlights": [
         "Configuration Layer Patches",
         "Ecosystem Asset Ingestion",
-        "MainWindow Icon Refactoring"
+        "MainWindow Icon Refactoring",
+        "Performance Improvements"
     ],
     "sections": [
         {
