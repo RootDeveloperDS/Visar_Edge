@@ -95,7 +95,7 @@
     {
       "version": "1.1.1.0",
       "file": "v1.1.1.0.json",
-      "title": "Major AI, Voice, UI & System Architecture Upgrades",
+      "title": "Major AI, Voice, UI & System Architecture",
       "release_type": "Major",
       "status": "beta",
       "release_date": ""
@@ -119,10 +119,34 @@
     {
       "version": "0.9.2.0",
       "file": "v0.9.2.0.json",
-      "title": "The Chatbot Popup & Memory Hub Upgrade",
+      "title": "The Chatbot Popup & Memory Hub",
       "release_type": "Minor",
       "status": "alpha",
       "release_date": ""
+    },
+    {
+      "version": "0.9.1.0",
+      "file": "v0.9.1.0.json",
+      "title": "The Configuration & Asset Optimization",
+      "release_type": "Patch",
+      "status": "alpha",
+      "release_date": "N/A"
+    },
+    {
+      "version": "0.9.0.0",
+      "file": "v0.9.0.0.json",
+      "title": "Enhance Feedback Dialog and Sidebar",
+      "release_type": "Minor",
+      "status": "alpha",
+      "release_date": "N/A"
+    },
+    {
+      "version": "0.8.3.0",
+      "file": "v0.8.3.0.json",
+      "title": "The Fullscreen & Dashboard Refactor",
+      "release_type": "Minor",
+      "status": "alpha",
+      "release_date": "N/A"
     }
   ]
 }

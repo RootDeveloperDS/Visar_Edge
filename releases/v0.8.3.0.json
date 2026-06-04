@@ -1,0 +1,46 @@
+{
+    "version": "0.8.3.0",
+    "codename": "The Fullscreen & Dashboard Refactor Update",
+    "title": "Add Fullscreen in Social and Coding Boxes, Refactor Settings Tab, and Add detail_PC.py",
+    "release_type": "Minor",
+    "release_date": "N/A",
+    "development_period": "N/A",
+    "status": "alpha",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This update deploys immersive viewport expansion capabilities across independent desktop dashboard boxes, overhauls settings tab file management, and isolates host telemetry processes.",
+    "highlights": [
+        "Social Tab Box Fullscreen",
+        "Coding Tab Box Fullscreen",
+        "Settings Layout Refactor",
+        "Host Asset Isolation (detail_PC.py)"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Engineered dedicated fullscreen toggle capabilities directly inside individual Social and Coding layout container boxes.",
+                "Created detail_PC.py to cleanly separate host hardware metrics collection and platform-specific environment data profiles."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Refactored the Settings Tab codebase to cleanly separate UI presentation fields from the structural data configurations."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": []
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": []
+        }
+    ],
+    "notes": "Version 0.8.3.0 introduces crucial granular viewing control via individual dashboard block expansions. Isolating machine-specific discovery mechanisms into detail_PC.py guarantees that core frontend UI files remain platform-independent."
+}

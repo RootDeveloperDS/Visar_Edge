@@ -1,0 +1,53 @@
+{
+    "version": "0.9.0.0",
+    "codename": "Enhance Feedback Dialog and Sidebar",
+    "title": "Enhance Feedback Dialog and Sidebar Functionality",
+    "release_type": "Minor",
+    "release_date": "N/A",
+    "development_period": "N/A",
+    "status": "alpha",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This massive milestone structures the feedback loop with strict category tracking, overhauls bottom icon loops with animated rendering, and adds 8 core operational tabs to the system architecture.",
+    "highlights": [
+        "Categorized Feedback Dialog",
+        "Animated Sidebar GIF Icons",
+        "8-Tab Ecosystem Expansion",
+        "Glowing Color Utility Module",
+        "Dynamic Toast Notification Subsystem",
+        "Disabled Tab Styling Refinement"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Deployed 8 distinct tabs to the main window container: Analytics, Learning, Memory, Security, Research, Games, Entertainment, and Music.",
+                "Engineered a dedicated glowing color utility function to generate standardized sci-fi emission profiles across UI components.",
+                "Implemented a global toast notification subsystem to deliver instant, non-blocking UI feedback to users."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Modified FeedbackDialog to accept an explicit category parameter to group diagnostic feedback messages.",
+                "Updated the send_feedback pipeline to append precise functional categories into outbound log payloads.",
+                "Refactored the bottom navigation sidebar buttons to support animated GIF render states and improved border style matching.",
+                "Upgraded visual rules for disabled tabs inside settings to make unavailable modules clear at a glance.",
+                "Polished general layout styles, modernizing the title banners and primary control button geometries."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": []
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": []
+        }
+    ],
+    "notes": "Version 0.9.0.0 maps out the architectural layout for the operational suite of VISAR tabs. Adding multi-category error classification alongside real-time toast messaging sets up solid foundational user interaction patterns."
+}
