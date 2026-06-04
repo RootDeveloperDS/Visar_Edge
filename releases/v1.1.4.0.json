@@ -1,0 +1,54 @@
+{
+    "version": "1.1.4.0",
+    "codename": "The Task Decomposition & Memory Update",
+    "title": "Task Decomposition, Contextual Memory & Ear Core Tuning",
+    "release_type": "Major",
+    "release_date": "2026-02-13",
+    "development_period": "2026-02-11 to 2026-02-13 (3 Days)",
+    "status": "beta",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This update introduces recursive task decomposition for complex queries, significantly improves conversational context retention across LLMs, and refines the auditory input sensitivity for more natural interaction.",
+    "highlights": [
+        "Task Decomposer Module",
+        "Recursive Execution Loop",
+        "Context-Aware LLM Integration",
+        "Gemini & Groq History Injection",
+        "Ear Core Sensitivity Tuning",
+        "Natural Speech Pause Handling"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Added task_decomposer.py to break down complex, multi-part user queries into atomic, standalone prompts compatible with the Intent Router.",
+                "Introduced a recursive execution loop within visar_edge_brain to process the Decomposer_queue sequentially until all sub-tasks are resolved.",
+                "Added a Windows system beep as an immediate auditory cue when the microphone activates."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Upgraded Chat Core to inject full conversation history, System Instructions, Recent Chat Summaries, and Long-term Memory into requests.",
+                "Refactored Gemini and Groq API payloads to process historical context and system prompts, significantly increasing response reliability and conversational coherence.",
+                "Reduced the Ear Core energy_threshold, allowing the system to accurately detect and process quieter, softer speech commands.",
+                "Increased the Ear Core pause_threshold to 1.2s to accommodate natural pauses in user speech without cutting off input prematurely."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Patched the listening_started signal to emit strictly only when the listener loop is confirmed to be active."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": []
+        }
+    ],
+    "notes": "Version 1.1.4.0 dramatically enhances VISAR's cognitive processing by allowing it to autonomously break down multi-step instructions. Combined with the new context-injection pipeline for Groq and Gemini, the AI now maintains strong conversational continuity."
+}

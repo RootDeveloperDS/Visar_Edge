@@ -1,0 +1,50 @@
+{
+    "version": "0.9.2.0",
+    "codename": "The Chatbot Popup & Memory Hub Upgrade",
+    "title": "Add VisarDialog for Chatbot Integration and Enhance Memory Hub Components",
+    "release_type": "Minor",
+    "release_date": "N/A",
+    "development_period": "N/A",
+    "status": "alpha",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This pre-release patch integrates the VISAR chatbot natively as a dynamic popup dialog and heavily expands the system's memory ecosystem with a structured multi-component hub.",
+    "highlights": [
+        "VisarDialog Popup Integration",
+        "Sidebar Callback Architecture",
+        "2x4 Grid Memory Tab Layout",
+        "Multi-Component Memory Suite",
+        "Gemini API Core Integration"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Implemented the VisarDialog class to load and display the VISAR chatbot inside a dedicated, flexible popup interface.",
+                "Integrated a dedicated chatbot activation button in the left sidebar layout complete with tooltip indicators and callback tracking.",
+                "Created an arsenal of modular memory hub components, introducing a built-in To-Do List, Notes engine, and Reminders module.",
+                "Engineered the base API model wrapper to facilitate native interactions with Gemini AI, packing built-in error safety catches and localized usage examples."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Updated the primary Main Window layout execution parameters to natively track, position, and toggle the chatbot popup overlay layer.",
+                "Enhanced the Memory Tab interface layout by deploying a highly structured, symmetrical 2x4 grid system to cleanly isolate individual utility sub-components."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": []
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": []
+        }
+    ],
+    "notes": "An essential iteration in the v0.x branch that bridges the primary system UI directly to specialized sub-windows. Organizing the memory tools into a rigid 2x4 layout ensures clean scaling as additional localized data tools are developed."
+}

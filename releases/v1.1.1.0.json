@@ -1,0 +1,62 @@
+{
+    "version": "1.1.1.0",
+    "codename": "The AI , Synapse & Voice Architecture",
+    "title": "Major AI, Voice, UI, and System Architecture Upgrades",
+    "release_type": "Major",
+    "release_date": "N/A",
+    "development_period": "N/A",
+    "status": "beta",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This massive upgrade introduces VISAR Synapse and VISAR Brain to orchestrate AI tasks, implements a fully functional voice input/output engine, and connects the system to live AI models.",
+    "highlights": [
+        "VISAR Synapse & Brain Orchestration",
+        "Multi-Model Support (Gemini/Groq/Ollama)",
+        "Edge TTS & pyttsx3 Voice Engine",
+        "Wake-Word Activation Modes",
+        "HUD-Style Holographic Reply Panel",
+        "Delta-Based News Engine",
+        "Streaming AI Responses"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Introduced VISAR Synapse as the AI nervous system and VISAR Brain to orchestrate task execution.",
+                "Integrated the VISAR Voice Engine with online Edge TTS (2 voices) and an offline pyttsx3 fallback.",
+                "Added voice input (Ears) with selectable wake-word modes (partner, computer, jarvis).",
+                "Enabled live AI processing from Groq, Gemini, and Ollama (phi-3, tinyllama) with streaming response support.",
+                "Deployed a HUD-style AI reply panel in the center dashboard featuring 4 distinct speaking equalizer modes.",
+                "Implemented Markdown formatting support, mic controls, and a global Stop Engine switch within the chat core.",
+                "Added fullscreen mode for the terminal box and integrated 6 random futuristic transition animations.",
+                "Introduced two new entertainment modules: Neon Racer 3D and Void Conqueror."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Implemented a delta-based news engine across all news boxes, ensuring the Telegram bot sends only new notifications.",
+                "Refactored the dashboard layout using a dictionary-based widget manager for enhanced UI modularity.",
+                "Updated AspectBackgroundWidget with new background colors and improved wallpaper handling mechanics.",
+                "Adjusted global VISAR UI geometry and enforced minimum size constraints to prevent rendering breaks.",
+                "Enhanced error handling and logging pipelines for safer API interactions."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Resolved a window movement glitch that caused unstable dragging behaviors.",
+                "Fixed a structural spacing issue between Dashboard Box 5 (Quick Tools) and Box 6 (Feedback)."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": []
+        }
+    ],
+    "notes": "Version 1.1.1.0 breathes life into VISAR Edge by connecting the UI to actual cognitive models. The introduction of Synapse and Brain, combined with the new Voice Engine, transforms the software from a static interface into a highly interactive, multi-modal AI assistant."
+}

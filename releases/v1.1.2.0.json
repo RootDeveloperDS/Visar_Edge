@@ -1,0 +1,63 @@
+{
+    "version": "1.1.2.0",
+    "codename": "The Architecture & Performance Upgrade",
+    "title": "Major Architecture, UI & Performance Update",
+    "release_type": "Major",
+    "release_date": "2026-01-28",
+    "development_period": "2026-01-23 to 2026-01-28 (5 Days)",
+    "status": "beta",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "VISAR Edge transitions from a feature-based assistant to a layered cognitive system. This update lays the foundation for Memory, Web autonomy, and safe system control, with major gains in intent accuracy, UI polish, and performance efficiency.",
+    "highlights": [
+        "MPV-Based Streaming Audio",
+        "4-Layer Intent Router",
+        "Dynamic Hardware Manager",
+        "Advanced System Profiling",
+        "Futuristic Settings Overhaul",
+        "Animation Lifecycle Optimization",
+        "Offline Firebase Handling"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Introduced the Intent Router with a 4-layered architecture: Deterministic rules, Context checks, Confidence gating, and LLM-assisted fallback.",
+                "Added 3 new executable 'Hands' (actuators): MEMORY (store/recall), WEB_OPEN, and SYSTEM_CLOSE.",
+                "Deployed a Hardware_Manager to dynamically adjust performance behavior based on available RAM and CPU core counts.",
+                "Integrated advanced profiling and diagnostics tools: thread_monitor, yappi_monitor, and profiler_monitor, alongside a user-configurable FPS Monitor.",
+                "Implemented a full sci-fi overhaul for the Settings Tab, featuring glowing textboxes, sliders, toggles, an API key selector, and an environment variable editor.",
+                "Added drop shadows to glowing UI boxes for better depth perception and updated button designs for VISAR Chat Core and Live Users.",
+                "Finalized a gradient-based background with controlled transparency (alpha ~240-230) and a gradient fallback when wallpapers are disabled."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Replaced the legacy pygame voice speaker with an MPV-based voice engine to support streaming TTS audio and improve interruption handling.",
+                "Optimized the center panel animation lifecycle, dynamically starting and stopping timers based on UI visibility to prevent unnecessary CPU usage.",
+                "Implemented QPixmap caching for wallpapers to drastically reduce UI redraw overhead.",
+                "Improved the reliability of subprocess launching and app resolution within sys_core for OS-level commands (Chrome, Calculator, Notepad)."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Fixed all known intent misclassification bugs, significantly reducing false positives where casual phrases triggered system actions.",
+                "Resolved bugs where animation timers continued running while UI layers were hidden off-screen.",
+                "Patched multiple offline-handling issues in firebase_config.py to improve backend robustness when network connectivity drops."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": [
+                "Removed the pygame voice engine dependency in favor of the new MPV-based streaming architecture."
+            ]
+        }
+    ],
+    "notes": "Version 1.1.2.0 establishes a robust foundation for advanced cognitive processing. The introduction of the 4-layer Intent Router guarantees high-accuracy command execution, while the new Hardware Manager and animation optimizations ensure the system scales elegantly across diverse hardware environments."
+}

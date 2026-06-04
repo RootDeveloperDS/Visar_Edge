@@ -1,4 +1,56 @@
 {
-  "version": "v1.1.0.0",
-  "notes": "Release v1.1.0.0."
+    "version": "1.1.0.0",
+    "codename": "The New Sci-Fi UI",
+    "title": "Beta UI - The New Futuristic AI Interface",
+    "release_type": "Major",
+    "release_date": "N/A",
+    "development_period": "N/A",
+    "status": "beta",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This major release overhauls the VISAR Edge dashboard into a new futuristic AI interface, introducing background multimedia, advanced Avatar states, and experimental Telegram news integration.",
+    "highlights": [
+        "Futuristic Dashboard UI Overhaul",
+        "Chat Core Starter UI Update",
+        "Multimedia Intros & Wallpapers",
+        "Avatar Visar_States Integration",
+        "Warning Layer Message Display",
+        "Threaded Feedback System",
+        "Telegram News Updates (Experimental)"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Added background wallpaper images and interactive intro videos complete with audio.",
+                "Integrated Visar_States to the center panel and avatar for dynamic visual feedback.",
+                "Implemented a dedicated Message Display for the Warning Layer.",
+                "Added new interactive features and controls to the titlebar.",
+                "Introduced the Telegram News Update feature (currently marked as unstable/experimental)."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Completely overhauled the entire VISAR Edge Dashboard from v1.0.0.0 to the new v1.1.0.0 futuristic AI interface.",
+                "Updated the UI aesthetics of the visar chatcore starter.py component.",
+                "Refactored the feedback system to utilize background threading, preventing UI lockups."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Applied minor fixes to the Tab Transition Animation to ensure smooth visual rendering."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": []
+        }
+    ],
+    "notes": "Version 1.1.0.0 establishes the foundational sci-fi aesthetic for the VISAR Edge platform. Please note that the newly introduced Telegram News Update feature is currently in an unstable testing phase."
 }

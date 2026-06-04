@@ -1,4 +1,61 @@
 {
-  "version": "v1.3.0.0",
-  "notes": "Release v1.3.0.0."
+    "version": "1.3.0.0",
+    "codename": "The RAG Architecture & Persistent Memory Upgrade",
+    "title": "RAG Architecture, Persistent Memory & Multi-Model Wake Word",
+    "release_type": "Major",
+    "release_date": "2026-02-26",
+    "development_period": "2026-02-24 to 2026-02-26 (2 Days)",
+    "status": "beta",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "Upgraded the VISAR Edge intelligence core from a stateless router to a context-aware AI agent. This update introduces Short-Term Memory, Long-Term Semantic Memory via ChromaDB (RAG), and a robust multi-model audio detection system.",
+    "highlights": [
+        "Local ChromaDB Integration",
+        "all-MiniLM-L6-v2 Vectorization",
+        "Sliding Context Window",
+        "Deterministic Vector Upserts",
+        "NeuralScannerWorker QThread",
+        "5-Model Wake Word Engine",
+        "Data Directory Isolation"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Integrated a local, CPU-optimized ChromaDB instance for long-term semantic memory retention.",
+                "Built vector_store.py utilizing all-MiniLM-L6-v2 to partition large documents into overlapping 500-character mathematical vectors.",
+                "Injected vector_store.search(text) results directly into _start_ai_processing to prepend retrieved neural context before LLM routing.",
+                "Added _load_chat_session() and _save_chat_session() to automatically persist master message histories within recent_chat.json.",
+                "Rewrote memory_core.py to append explicit user instructions directly into explicit_memories.txt.",
+                "Upgraded wake_word_core.py to concurrently execute 5 distinct models for accurate 'Visar' wake word recognition.",
+                "Added neural_scan_complete signal in visar_synapse.py to broadcast background processing status to the UI loading notification engine."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Implemented a sliding message context window within visar_edge_brain.py to enforce safety limits and prevent RAM overload.",
+                "Offloaded heavy neural file indexing to a background QThread (NeuralScannerWorker), dropping system startup time from ~81s to ~39s.",
+                "Replaced destructive .add() processing loops with deterministic .upsert() chunk IDs to skip redundant mathematical computations.",
+                "Increased the baseline audio gain and processing sensitivity of the listening widget interface."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Triggered immediate, real-time backend neural update routines via vector_store.index_learning_data() following explicit memory writes."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": [
+                "Refactored the /data directory to isolate learning_data/ from app_data/, removing operational metrics from the LLM injection scope to eliminate hallucinations and reduce indexing overhead."
+            ]
+        }
+    ],
+    "notes": "Version 1.3.0.0 effectively shifts VISAR Edge into the realm of stateful, agentic operations. By isolating operational variables from raw semantic data and utilizing concurrent background worker threads, the system provides high-speed vector retrieval and enhanced wake word precision without introducing latency into the primary UI loop."
 }

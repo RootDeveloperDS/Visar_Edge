@@ -1,4 +1,50 @@
 {
-  "version": "v1.2.0.0",
-  "notes": "Release v1.2.0.0."
+    "version": "1.2.0.0",
+    "codename": "The Lazy Loading & Wake Word Update",
+    "title": "Lazy Loading, Social Tab Optimization & Experimental Wake Word",
+    "release_type": "Major",
+    "release_date": "2026-02-23",
+    "development_period": "2026-02-22 to 2026-02-23 (2 Days)",
+    "status": "beta",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This update focuses on resource management, significantly reducing system overhead through deferred rendering, while introducing the foundational architecture for hands-free voice activation.",
+    "highlights": [
+        "Global Lazy Loading",
+        "Social Tab Optimization",
+        "Tab Loading Placeholders",
+        "Neural Feed Styling Updates",
+        "Experimental 'Visar' Wake Word"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Added Tab Loading Placeholder Text to provide clean visual feedback while heavier modules initialize in the background.",
+                "Integrated the experimental 'Visar' wake word utilizing the openwakeword library for hands-free activation."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Implemented global lazy loading and deferred rendering across all main application tabs to significantly accelerate initial startup times.",
+                "Refactored the architecture of all 9 embedded boxes within the Social Tab to maintain a strictly low footprint on both CPU and RAM.",
+                "Updated the Neural Feed background styling to better align with the system's futuristic visual identity.",
+                "Enhanced the design and interactive hitboxes for the Settings and Full Screen buttons within the Social Tab."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": []
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": []
+        }
+    ],
+    "notes": "The newly integrated wake word engine is currently marked as Experimental/Unstable. Future patches will focus on acoustic tuning and thread stabilization to ensure reliable hands-free operation."
 }

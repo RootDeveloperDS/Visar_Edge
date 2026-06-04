@@ -1,0 +1,61 @@
+{
+    "version": "1.1.7.0",
+    "codename": "The Audio Engine Evolution",
+    "title": "Audio Engine Evolution, Sound Management & Core Stability",
+    "release_type": "Minor",
+    "release_date": "2026-02-20",
+    "development_period": "2026-02-18 to 2026-02-20 (3 Days)",
+    "status": "beta",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This update heavily refactors the audio processing pipeline, introduces real-time amplitude tracking for UI synchronization, and implements a custom-engineered dynamic gating system to solve hardware timing constraints.",
+    "highlights": [
+        "Live Amplitude Tracking",
+        "RMS Volume Calculation",
+        "Human-Engineered Dynamic Gating",
+        "Robust Sound Manager",
+        "Centerboard UI Integration",
+        "QThread Crash Resolutions",
+        "Safe Memory Lifecycles"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Replaced the static audio listener with a manual byte-chunk reading loop for live amplitude tracking.",
+                "Utilized audioop.rms to calculate and emit live microphone volume levels (amplitude_changed) for real-time GUI animation.",
+                "Engineered a 100% human-designed Dynamic Gate Thresholding system to bypass hardware initialization spikes and delayed OS-level beep interference.",
+                "Implemented dynamic gate logic: initializes with a 5.0-second pause_threshold, then snaps to 1.5 seconds after exactly 3.0 seconds.",
+                "Refactored play_ting.py into a robust sound_manager.py supporting both custom and default system sounds.",
+                "Deployed the upgraded Listening widget into the center panel and connected the audio amplitude signal to centerboard.listening via visar_synapse."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Enabled highly responsive, real-time GUI voice animations synchronized with actual user audio input.",
+                "Applied rendering and logic refinements to centerboard.speaking.py.",
+                "Improved global codebase hygiene by cleaning up minor variable naming and scope issues across multiple files."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Resolved critical QEventLoop and 'QThread: Destroyed while thread is still running' crashing errors.",
+                "Implemented safe memory lifecycle handling using Qt's deleteLater() to ensure background audio workers terminate cleanly without crashing the main thread.",
+                "Resolved legacy play_ting import issues across the news boxes."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": [
+                "Removed the legacy static, blocking audio listener pipeline in favor of the new byte-chunk reading loop."
+            ]
+        }
+    ],
+    "notes": "A critical highlight of this release is the Dynamic Gate Threshold—a complex hardware-software timing solution that was 100% theorized and implemented manually without AI assistance. This release dramatically stabilizes the threading architecture, completely eliminating QThread destruction crashes."
+}

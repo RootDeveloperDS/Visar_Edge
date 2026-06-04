@@ -5,7 +5,7 @@
     "release_type": "Minor",
     "release_date": "2026-03-20",
     "development_period": "2026-03-17 to 2026-03-20 (4 Days)",
-    "status": "stable",
+    "status": "beta",
     "developer": "Devansh Sharma",
     "banner_image": "",
     "summary": "This update introduces a native persistent browser for seamless internal redirects, enhances audio detection via digital frame amplification, and significantly overhauls the Neural Feed UI to support future complex multi-step AI interactions.",

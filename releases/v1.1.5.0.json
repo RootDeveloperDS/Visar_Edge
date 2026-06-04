@@ -1,0 +1,66 @@
+{
+    "version": "1.1.5.0",
+    "codename": "The Holographic UI & Modular Sessions Update",
+    "title": "Modular Sessions, Holographic UI & Window Logic",
+    "release_type": "Major",
+    "release_date": "2026-02-15",
+    "development_period": "2026-02-14 to 2026-02-15 (2 Days)",
+    "status": "beta",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This major update refactors the Chat Core into a modular architecture, introduces a persistent thread database, and deploys the 'Holographic Blade' sidebar interface with advanced native windowing logic.",
+    "highlights": [
+        "Modular Core Architecture",
+        "Persistent Thread Database",
+        "Holographic Blade Sidebar",
+        "Focus Scrim Overlay",
+        "Crash-Proof Animations",
+        "No Bleed AI Stop Protocol",
+        "Native Frameless Windowing"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Implemented the 'Holographic Blade' sidebar overlay using QListView and QStyledItemDelegate, featuring Dark Glass visuals, a Neon Cyan spine, and tactical Ruler Ticks.",
+                "Added a Focus Scrim dimming layer over the main chat that activates when the sidebar is open.",
+                "Introduced a Right-Click context menu with a '⚠️ TERMINATE THREAD' option for safe chat deletion.",
+                "Implemented the 'No Bleed' protocol: Switching chats forces the AI to immediately halt generation to prevent cross-thread text contamination.",
+                "Added nativeEvent logic for correct Windows Snap and Maximize behavior, including dynamic margins that remove glowing borders when maximized.",
+                "Introduced Inset Docking to allow the sidebar to adapt its geometry dynamically based on windowed versus maximized states."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Split the monolithic Visar_Chat_Core.py into a modular architecture, extracting sidebar logic to gui/sidebar/session_sidebar.py.",
+                "Migrated session management to a robust Thread System utilizing sessions_index.json (Database) and threads/chat_ID.json (Logs).",
+                "Reorganized data storage paths to data/Visar_Chat_Core/sessions/ for professional-grade state management.",
+                "Upgraded sidebar animation to a crash-proof, width-based transition (0px to 280px) to eliminate Windows OS transparency artifacts.",
+                "Optimized interaction logic with Smart Sorting, pushing recent chats to the top using a 'Dirty Check' to bypass unnecessary re-sorting."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Resolved 'Ghost Resurrection' where deleted files would reappear in the UI upon typing.",
+                "Fixed application crashes caused by manual file deletion, ensuring index errors are now handled gracefully.",
+                "Enforced strict clipping on sidebar items to completely eliminate horizontal overflow.",
+                "Fixed duplicate spawning by ensuring the loading of old chats correctly updates the session ID.",
+                "Applied automatic eliding to sidebar titles, appending '...' to prevent text overflow."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": [
+                "Removed legacy single-file overwrite logic in favor of the persistent multi-thread database.",
+                "Removed traditional UI grid lines in favor of the new sci-fi tactical 'Ruler Ticks'."
+            ]
+        }
+    ],
+    "notes": "Version 1.1.5.0 represents a foundational shift in how VISAR Edge handles user state. By moving to a multi-threaded JSON database and integrating native OS windowing rules, the UI is now fully crash-resistant and visually aligned with the Stark Tech ecosystem."
+}

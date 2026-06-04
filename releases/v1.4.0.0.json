@@ -5,7 +5,7 @@
     "release_type": "Major",
     "release_date": "2026-03-16",
     "development_period": "2026-02-27 to 2026-03-16 (18 Days)",
-    "status": "stable",
+    "status": "beta",
     "developer": "Devansh Sharma",
     "banner_image": "",
     "summary": "This massive milestone transforms VISAR Edge's internal architecture, introducing a highly modular Status Bar engine for real-time telemetry, robust API key rotation, intelligent LLM routing, and significant vector database optimizations.",

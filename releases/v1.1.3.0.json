@@ -1,0 +1,65 @@
+{
+    "version": "1.1.3.0",
+    "codename": "The Vision & Performance Core Update",
+    "title": "Performance, Vision Core, UI Evolution & System Stability Update",
+    "release_type": "Minor",
+    "release_date": "2026-02-09",
+    "development_period": "2026-01-29 to 2026-02-09 (11 Days)",
+    "status": "beta",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This update transitions VISAR Edge from a feature-driven assistant to a multi-layered cognitive operating system, introducing the new Vision Core, Performance Core, and a strictly prioritized Avatar State Machine.",
+    "highlights": [
+        "Vision Core Integration",
+        "Performance Core Engine",
+        "Avatar State Priority Machine",
+        "Low-Priority Background Threading",
+        "Global Signal Architecture Refactor",
+        "Intent Router State Expansion",
+        "Futuristic Dashboard Overhaul"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Introduced vision_core to capture and analyze the user screen, establishing the foundation for multimodal reasoning.",
+                "Introduced performance_core.py for dynamic AC/Battery detection and dynamic CPU core affinity adjustments (Performance vs. Balanced modes).",
+                "Added mode-change toast notifications to visually alert the user of system-level power shifts.",
+                "Added a dedicated configuration setting for the Picovoice API key within the environment key editor.",
+                "Migrated wallpaper assets to a dedicated /wallpaper directory and integrated new visual assets."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Set all background worker threads to low OS priority, significantly reducing CPU contention and improving UI responsiveness under load.",
+                "Extended Intent Router logic to support VISION, SYSTEM_CLOSE, and WEB_OPEN states with recalibrated confidence gating (100% benchmark accuracy).",
+                "Replaced the Dashboard Box 1 CPU percentage widget with a new Futuristic Turbine Gauge.",
+                "Updated top bar control buttons to a hexagonal arrow-style design and applied glassmorphism to the Top Bar and WebView Panel.",
+                "Migrated feedback signals to the visar_synapse core, enabling global accessibility and improved event distribution consistency.",
+                "Implemented a strict priority hierarchy for the Avatar State Machine (Shutdown > Error > Warning) to prevent state flickering and enforce deterministic visuals.",
+                "Upgraded News Toast and Mini Toast UI for better sci-fi consistency and animation polish."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Fixed prior intent misclassification behavior for newly added router states.",
+                "Resolved import dependency issues affecting first-time users.",
+                "Stabilized the initialization sequence and default config generation, ensuring safer fallback behavior on missing environment variables.",
+                "Fixed spacing and alignment inconsistencies in the top bar control buttons."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": [
+                "Removed the unnecessary scroll bar from the Neural Feed to maintain a cleaner, strict UX."
+            ]
+        }
+    ],
+    "notes": "Version 1.1.3.0 drastically enhances system governance through the new Performance Core and establishes the framework for multimodal capabilities via the Vision Core. Architectural changes to threading and the Avatar State Machine ensure high stability during intensive operations."
+}

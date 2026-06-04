@@ -1,0 +1,54 @@
+{
+    "version": "1.1.7.1",
+    "codename": "The System Initialization & Audio Safety Update",
+    "title": "System Initialization, Audio Safety & Consistency Fixes",
+    "release_type": "Patch",
+    "release_date": "2026-02-21",
+    "development_period": "2026-02-21 (1 Day)",
+    "status": "beta",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This release focuses on standardizing the codebase, resolving critical Qt initialization bugs, and expanding the centralized sound management system with strict thread safety.",
+    "highlights": [
+        "QApplication Initialization Fix",
+        "Global Version Standardization",
+        "Thread-Safe Audio via Qt Signals",
+        "GlobalSystemSounds Configuration",
+        "Social Tab Persistent Logins",
+        "Toast Rendering Z-Index Fix"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Added new default system sounds to sound_manager.py, including a dedicated Shutdown sound effect.",
+                "Introduced the GlobalSystemSounds configuration setting to allow centralized control over system-wide auditory feedback.",
+                "Implemented Persistent Login Profiles across all boxes within the Social Tab to retain user session data between reboots."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Refactored ear_core.py to strictly utilize the Sound Manager via Qt Signals, guaranteeing crash-free background audio execution.",
+                "Fully updated README.md to document all newly integrated features and architectural changes up to version 1.1.7.1."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Resolved premature app=QApplication instantiation in both Visar Chat Core and Visar Main to prevent early rendering crashes.",
+                "Patched a critical Version Mismatch Error by sweeping the codebase to uniformly update legacy v1.0 references to the v1.1 architecture.",
+                "Updated the news toast parent reference to .window() inside news_delta_engine.py to ensure correct Z-index rendering and UI hierarchy."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": []
+        }
+    ],
+    "notes": "Version 1.1.7.1 provides essential stability improvements, specifically targeting thread safety in audio processing and resolving early rendering crashes to ensure a robust foundation for future features."
+}
