@@ -1,0 +1,65 @@
+{
+    "version": "1.6.0.0",
+    "codename": "The Production Architecture Update",
+    "title": "Production Architecture, Global Authentication, Neural Feed Upgrades & VISAR Uplink",
+    "release_type": "Major",
+    "release_date": "2026-05-29",
+    "development_period": "2026-04-18 to 2026-05-29 (41 Days)",
+    "status": "beta",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This monumental update transforms VISAR Edge into a highly secure, scalable, and production-ready platform. Enjoy a smoother interface that never freezes, secure Google logins, blazing-fast AI memory, and real-time chat directly with the creator.",
+    "highlights": [
+        "Secure Global Login & Profiles",
+        "Enterprise-Grade App Security",
+        "Smoother, Freeze-Free Interface",
+        "Live Support Chat (VISAR Uplink)",
+        "Smarter, Faster Neural Feed",
+        "Lightning-Fast AI Memory",
+        "Instant Wallpaper Customization"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Introduced a seamless setup experience allowing you to log in securely using your Email or a Google Account.",
+                "Added a quick-login window to easily resume expired sessions and a new central Profile Manager to view your account details.",
+                "Launched VISAR Uplink: a highly secure, real-time chat feature that lets you communicate directly with the creator right from the app.",
+                "Built a beautiful, easy-to-use Wallpaper Manager. Browse thumbnails and apply new backgrounds instantly without needing to restart VISAR.",
+                "Upgraded the chat box to automatically expand as you type, and added a smart action button that instantly transforms into a highly visible red 'STOP' button to halt the AI in emergencies.",
+                "Released a massive update to the Windows Deep Cleaner (v4.0) featuring a fresh new look and deeper system cleaning capabilities."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Completely separated the visual interface from the AI 'Brain.' VISAR will now remain incredibly fast, responsive, and crash-resistant even when the AI is processing heavy tasks in the background.",
+                "Reorganized how VISAR stores your personal settings, securing them in protected Windows folders to meet enterprise privacy standards.",
+                "Upgraded VISAR's internal memory engine, allowing the AI to search through its knowledge base and recall information at blazing-fast speeds.",
+                "Optimized background processing so that when certain features are turned off, VISAR consumes exactly 0% of your computer's CPU, saving battery and system resources.",
+                "Enhanced the Status Bar to show a much more accurate reflection of your computer's actual processing power and multi-core usage."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Strengthened global security by completely hiding sensitive server configurations and enforcing strict backend identity verifications.",
+                "Fixed an annoying visual bug where loading spinners would get stuck on the screen forever.",
+                "Corrected various visual glitches across the News and Social tabs, fixed sidebar buttons, and resolved issues where background colors wouldn't load properly.",
+                "Fixed a bug that occasionally prevented the login screen from appearing when switching accounts."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": [
+                "Removed older, slower memory databases to make room for the new high-speed AI recall system.",
+                "Removed outdated background logic that was previously causing the app interface to slow down."
+            ]
+        }
+    ],
+    "notes": "Version 1.6.0.0 elevates VISAR Edge to a professional standard. By decoupling the interface from the heavy AI processing and adding secure global authentication, the app is now incredibly fast, stable, and ready for everyday use."
+}

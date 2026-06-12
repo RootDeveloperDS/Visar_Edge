@@ -1,9 +1,17 @@
 {
   "project": "VISAR Edge",
   "description": "Official VISAR Edge PC Version History",
-  "latest_version": "1.5.0.0",
+  "latest_version": "1.6.0.0",
   "developer": "Devansh Sharma",
   "versions": [
+    {
+      "version": "1.6.0.0",
+      "file": "v1.6.0.0.json",
+      "title": "Production Architecture, Global Auth, Neural Feed & VISAR Uplink",
+      "release_type": "Major",
+      "status": "beta",
+      "release_date": "2026-05-29"
+    },
     {
       "version": "1.5.0.0",
       "file": "v1.5.0.0.json",
