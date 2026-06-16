@@ -1,9 +1,17 @@
 {
   "project": "VISAR Edge",
   "description": "Official VISAR Edge PC Version History",
-  "latest_version": "1.6.0.0",
+  "latest_version": "1.6.1.0",
   "developer": "Devansh Sharma",
   "versions": [
+    {
+      "version": "1.6.1.0",
+      "file": "v1.6.1.0.json",
+      "title": "Modular Onboarding, Unified Auth & Brand New Dialogs UI",
+      "release_type": "Minor",
+      "status": "beta",
+      "release_date": "2026-06-15"
+    },
     {
       "version": "1.6.0.0",
       "file": "v1.6.0.0.json",

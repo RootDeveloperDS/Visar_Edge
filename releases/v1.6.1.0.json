@@ -1,0 +1,61 @@
+{
+    "version": "1.6.1.0",
+    "codename": "The Identity & Onboarding Update",
+    "title": "Modular Onboarding, Unified Authentication & Identity Centralization",
+    "release_type": "Minor",
+    "release_date": "2026-06-15",
+    "development_period": "2026-06-11 to 2026-06-15 (4 Days)",
+    "status": "beta",
+    "developer": "Devansh Sharma",
+    "banner_image": "",
+    "summary": "This release brings a beautifully redesigned setup wizard, a centralized profile manager, and significant improvements to the login experience, making it easier and safer than ever to manage user VISAR account.",
+    "highlights": [
+        "Redesigned Setup Wizard",
+        "In-App Account Registration",
+        "Centralized Profile Manager",
+        "Instant Profile Hot-Swapping",
+        "Glassmorphic UI Unification",
+        "Sidebar Icon Refresh",
+        "Login Loop Bug Fixes"
+    ],
+    "sections": [
+        {
+            "type": "added",
+            "title": "Added & New Features",
+            "items": [
+                "Launched a completely redesigned, easy-to-use Onboarding Setup Wizard featuring new visual layouts and helpful information pages.",
+                "Added the ability to register a brand-new account directly from the quick-login screen without needing to restart the application.",
+                "Integrated functional, real-time system permission requests directly into the initial setup process.",
+                "Added a helpful safety warning that alerts user if user accidentally try to close the setup wizard before finishing user configuration."
+            ]
+        },
+        {
+            "type": "improved",
+            "title": "Improvements & System Redux",
+            "items": [
+                "Moved all personal account settings (like user Username, Nickname, and Email) out of the general settings and into a newly designed, easily scrollable Profile Manager.",
+                "Profile changes now update instantly across the entire application the moment user switch accounts or edit user details during a live session.",
+                "Upgraded the visual design of the Identity Manager and profile dialogues to perfectly match the sleek, glass-like aesthetic of the main application.",
+                "Refreshed all icons on the main left sidebar for a sharper, more modern look, with a specific design update to the 8th sidebar icon.",
+                "Upgraded the internal security engine to handle logins and account handshakes much more smoothly across different windows."
+            ]
+        },
+        {
+            "type": "fixed",
+            "title": "Fixes & Security",
+            "items": [
+                "Fixed a frustrating bug where the login screen would continuously pop up in an endless loop even after successfully logging in.",
+                "Resolved an issue where clicking the profile icon could force multiple identity windows to open and stack on top of each other.",
+                "Unified how the application tracks its internal version number to prevent future update glitches and mismatched version errors."
+            ]
+        },
+        {
+            "type": "removed",
+            "title": "Removed & Deprecated",
+            "items": [
+                "Completely removed the outdated legacy setup onboarding interface to make way for the new modular wizard."
+            ]
+        }
+    ],
+    "notes": "Version 1.6.1.0 ensures that the first steps a user takes into VISAR Edge are polished, secure, and visually stunning. By centralizing the identity controls, managing user profile is now a seamless part of the daily workflow."
+}
