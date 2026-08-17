@@ -5,7 +5,8 @@
     "release_type": "Major",
     "release_date": "2026-02-15",
     "development_period": "2026-02-14 to 2026-02-15 (2 Days)",
-    "status": "beta",
+    "status": "Internal Alpha",
+    "label": "Internal Alpha",
     "developer": "Devansh Sharma",
     "banner_image": "",
     "summary": "This major update refactors the Chat Core into a modular architecture, introduces a persistent thread database, and deploys the 'Holographic Blade' sidebar interface with advanced native windowing logic.",
@@ -25,7 +26,7 @@
             "items": [
                 "Implemented the 'Holographic Blade' sidebar overlay using QListView and QStyledItemDelegate, featuring Dark Glass visuals, a Neon Cyan spine, and tactical Ruler Ticks.",
                 "Added a Focus Scrim dimming layer over the main chat that activates when the sidebar is open.",
-                "Introduced a Right-Click context menu with a '⚠️ TERMINATE THREAD' option for safe chat deletion.",
+                "Introduced a Right-Click context menu with a '\u26a0\ufe0f TERMINATE THREAD' option for safe chat deletion.",
                 "Implemented the 'No Bleed' protocol: Switching chats forces the AI to immediately halt generation to prevent cross-thread text contamination.",
                 "Added nativeEvent logic for correct Windows Snap and Maximize behavior, including dynamic margins that remove glowing borders when maximized.",
                 "Introduced Inset Docking to allow the sidebar to adapt its geometry dynamically based on windowed versus maximized states."

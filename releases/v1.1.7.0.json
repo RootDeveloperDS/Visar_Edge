@@ -5,7 +5,8 @@
     "release_type": "Minor",
     "release_date": "2026-02-20",
     "development_period": "2026-02-18 to 2026-02-20 (3 Days)",
-    "status": "beta",
+    "status": "Internal Alpha",
+    "label": "Internal Alpha",
     "developer": "Devansh Sharma",
     "banner_image": "",
     "summary": "This update heavily refactors the audio processing pipeline, introduces real-time amplitude tracking for UI synchronization, and implements a custom-engineered dynamic gating system to solve hardware timing constraints.",
@@ -57,5 +58,5 @@
             ]
         }
     ],
-    "notes": "A critical highlight of this release is the Dynamic Gate Threshold—a complex hardware-software timing solution that was 100% theorized and implemented manually without AI assistance. This release dramatically stabilizes the threading architecture, completely eliminating QThread destruction crashes."
+    "notes": "A critical highlight of this release is the Dynamic Gate Threshold\u2014a complex hardware-software timing solution that was 100% theorized and implemented manually without AI assistance. This release dramatically stabilizes the threading architecture, completely eliminating QThread destruction crashes."
 }

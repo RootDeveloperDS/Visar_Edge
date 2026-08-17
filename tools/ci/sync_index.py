@@ -21,6 +21,7 @@ for f in sorted(files, reverse=True):
         "title": data["title"],
         "release_type": data["release_type"],
         "status": data["status"],
+        "label": data.get("label", ""),
         "date": data["period"]["end"],
         "highlights": data.get("highlights", [])[:4]
     })

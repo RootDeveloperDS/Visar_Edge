@@ -4,7 +4,8 @@
     "release_type": "Major",
     "release_date": "2026-04-17",
     "development_period": "2026-03-21 to 2026-04-17 (28 Days)",
-    "status": "beta",
+    "status": "Internal Alpha",
+    "label": "Internal Alpha",
     "developer": "Devansh Sharma",
     "summary": "The second largest architectural upgrade in VISAR Edge history, replacing legacy intent routing with a fully autonomous Agentic Brain, strict tool safety, and a dedicated Kernel Control Center.",
     "highlights": [

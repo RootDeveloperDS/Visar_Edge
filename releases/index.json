@@ -9,7 +9,8 @@
       "file": "v1.6.1.0.json",
       "title": "Modular Onboarding, Unified Auth & Brand New Dialogs UI",
       "release_type": "Minor",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-06-15"
     },
     {
@@ -17,7 +18,8 @@
       "file": "v1.6.0.0.json",
       "title": "Production Architecture, Global Auth, Neural Feed & VISAR Uplink",
       "release_type": "Major",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-05-29"
     },
     {
@@ -25,7 +27,8 @@
       "file": "v1.5.0.0.json",
       "title": "Agentic Intelligence Upgrade, Kernel Tab & System Overhaul",
       "release_type": "Major",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-04-17"
     },
     {
@@ -33,7 +36,8 @@
       "file": "v1.4.5.0.json",
       "title": "Internal Browser, Audio Amplification & Neural Feed Evolution",
       "release_type": "Minor",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-03-20"
     },
     {
@@ -41,7 +45,8 @@
       "file": "v1.4.0.0.json",
       "title": "Dynamic Status Engine, API Key Rotation, Smart Routing & RAG Optimization",
       "release_type": "Major",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-03-16"
     },
     {
@@ -49,7 +54,8 @@
       "file": "v1.3.0.0.json",
       "title": "RAG Architecture, Persistent Memory & Multi-Model Wake Word",
       "release_type": "Major",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-02-26"
     },
     {
@@ -57,7 +63,8 @@
       "file": "v1.2.0.0.json",
       "title": "Lazy Loading, Social Tab Optimization & Experimental Wake Word",
       "release_type": "Major",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-02-23"
     },
     {
@@ -65,7 +72,8 @@
       "file": "v1.1.7.1.json",
       "title": "System Initialization, Audio Safety & Consistency Fixes",
       "release_type": "Patch",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-02-21"
     },
     {
@@ -73,7 +81,8 @@
       "file": "v1.1.7.0.json",
       "title": "Audio Engine Evolution, Sound Management & Core Stability",
       "release_type": "Minor",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-02-20"
     },
     {
@@ -81,7 +90,8 @@
       "file": "v1.1.5.0.json",
       "title": "VISAR Chat Core Updates: Modular Sessions, Holographic UI & Window Logic",
       "release_type": "Major",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-02-15"
     },
     {
@@ -89,7 +99,8 @@
       "file": "v1.1.4.0.json",
       "title": "Task Decomposition, Contextual Memory & Ear Core Tuning",
       "release_type": "Major",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-02-13"
     },
     {
@@ -97,7 +108,8 @@
       "file": "v1.1.3.0.json",
       "title": "Performance, Vision Core, UI Evolution & System Stability Update",
       "release_type": "Minor",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-02-09"
     },
     {
@@ -105,7 +117,8 @@
       "file": "v1.1.2.0.json",
       "title": "Major Architecture, UI & Performance Update",
       "release_type": "Major",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-01-28"
     },
     {
@@ -113,7 +126,8 @@
       "file": "v1.1.1.0.json",
       "title": "Major AI, Voice, UI & System Architecture",
       "release_type": "Major",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-01-23"
     },
     {
@@ -121,7 +135,8 @@
       "file": "v1.1.0.0.json",
       "title": "Beta UI - Welcome to The Brand New Futuristic AI Interface",
       "release_type": "Major",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-01-15"
     },
     {
@@ -129,7 +144,8 @@
       "file": "v1.0.0.0.json",
       "title": "Beta UI - Minor Fixes",
       "release_type": "Generation 1.0",
-      "status": "beta",
+      "status": "Internal Alpha",
+      "label": "Internal Alpha",
       "release_date": "2026-01-05"
     },
     {
@@ -137,7 +153,8 @@
       "file": "v0.9.2.0.json",
       "title": "The Chatbot Popup & Memory Hub",
       "release_type": "Minor",
-      "status": "alpha",
+      "status": "Dev",
+      "label": "Development",
       "release_date": "2025-10-26"
     },
     {
@@ -145,7 +162,8 @@
       "file": "v0.9.1.0.json",
       "title": "The Configuration & Asset Optimization",
       "release_type": "Patch",
-      "status": "alpha",
+      "status": "Dev",
+      "label": "Development",
       "release_date": "2025-10-24"
     },
     {
@@ -153,7 +171,8 @@
       "file": "v0.9.0.0.json",
       "title": "Enhance Feedback Dialog and Sidebar",
       "release_type": "Minor",
-      "status": "alpha",
+      "status": "Dev",
+      "label": "Development",
       "release_date": "2025-09-14"
     },
     {
@@ -161,7 +180,8 @@
       "file": "v0.8.3.0.json",
       "title": "The Fullscreen & Dashboard Refactor",
       "release_type": "Minor",
-      "status": "alpha",
+      "status": "Dev",
+      "label": "Development",
       "release_date": "2025-09-05"
     },
     {
@@ -169,7 +189,8 @@
       "file": "v0.8.2.0.json",
       "title": "Initial Foundational Architecture, UI Integration & Early Prototypes",
       "release_type": "Legacy Aggregate",
-      "status": "alpha",
+      "status": "Dev",
+      "label": "Development",
       "release_date": "2025-09-02"
     }
   ]
